@@ -55,7 +55,7 @@ make
 make install
 cd ../
 
-git clone https://github.com/tihmstar/usbmuxd2.git
+git clone https://github.com/jkcoxson/usbmuxd2
 cd usbmuxd2
 ./autogen.sh
 ./autogen.sh
