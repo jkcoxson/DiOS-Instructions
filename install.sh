@@ -25,9 +25,9 @@ apt-get install libavahi-client-dev -y
 
 
 
-apt-get install libusb-1.0-0-dev
+apt-get install libusb-1.0-0-dev -y
 
-apt-get install libssl-dev
+apt-get install libssl-dev -y
 
 
 git clone https://github.com/libimobiledevice/libplist
