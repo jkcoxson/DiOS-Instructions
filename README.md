@@ -11,7 +11,7 @@ Google Docs <https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvek
 
 Before starting you will need some terminology and information before starting. For the moment the only Windows install method requires DMG files which hold the debugger needed to activate JIT (just in time).
 
-This tutorial works on other apps other than DolphiniOS, like ppsspp and UTM. The tutorial gets revised over time and some might even fix some install issues.
+This tutorial works on other apps other than DolphiniOS, like PPSSPP and UTM. The tutorial gets revised over time and some might even fix some install issues.
 
 Got a lot of results from people trying it out and concluded that you might have to remount the debug image if your device dies or restarts. Which isn't a big deal if you have a shortcut or mount it when you start the debugger.
 
