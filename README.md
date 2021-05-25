@@ -27,18 +27,10 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 - First go to **My Apps** and scroll down to **View App IDs**
 
 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.jpg "image_tooltip")
 
 
 - In there you will see a unique bundle under the app's name. Make sure to write it down. Note, it is case sensitive.
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image2.jpg "image_tooltip")
@@ -174,9 +166,6 @@ This allows debugging apps over ssh with multiple apps and can be useful if you 
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image3.jpg "image_tooltip")
 
 
@@ -204,9 +193,6 @@ Download: [https://www.icloud.com/shortcuts/50947cc2884a470da132f42d4468c960](ht
 
 This can help with problems with libimobiledevice not attaching a debug image. (This requires auto login to fully work for things like altserver and libimobiledevice).
 
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image5.jpg "image_tooltip")
