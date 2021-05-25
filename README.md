@@ -50,11 +50,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 5. Scroll down and check the box for WiFi sync in iTunes.
 
-6. Minimize iTunes and open a power shell. 
+6. Minimize iTunes and open a power shell and Type.
 
-    Type: "cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer.
+`"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" `
 
-7. Run .\idevice_id.exe and copy the numbers and/or letters it gives you this is the UDID.
+but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer
+
+7. Run ` .\idevice_id.exe ` and copy the numbers and/or letters it gives you this is the UDID.
 
 8. Open AltStore, press My Apps and then view App IDs. Write down the small letters of DolphiniOS, as shown in the prerequisites from above.
 
@@ -65,17 +67,24 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
     Download2: [https://github.com/pdso/DeveloperDiskImage/tree/master](https://github.com/pdso/DeveloperDiskImage/tree/master)
 
-10. Unzip it and type .\ideviceimagemounter.exe \Users\username\LocationOfFile\iosversionofFile\DeveloperDiskImage.dmg 
+10. Unzip it and type 
 
-	If it fails to mount, restart both your iDevice and PC.
+` .\ideviceimagemounter.exe \Users\username\LocationOfFile\iosversionofFile\DeveloperDiskImage.dmg 
+`
+
+If it fails to mount, restart both your iDevice and PC.
 
 
 
-11. Then you can finally make sure you can run the app by running   .\idevicedebug -u UDID -n --detach run PackageID   where you replace UDID and PackageID with their values you found before.
+11. Then you can finally make sure you can run the app by running  
+
+` .\idevicedebug -u UDID -n --detach run PackageID `
+
+where you replace UDID and PackageID with their values you found before.
 
 	 
 
-- **_Important note:_** On step 11 _<span style="text-decoration:underline;">there is a space in between -n and --detach</span>_. Also you can remove -n if you are wanting to activate through usb only. -n is for network.
+- **_Important note:_** On step 11 _<span style="text-decoration:underline;">there is a space in between `-n` and `--detach`</span>_. Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
 
 - **_Recommendation:_** To prevent mess ups on step 11 copy the command and paste it in notepad or a text editor and add UDID and packageID and run the command you edited.
 
@@ -85,22 +94,31 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 1. Download [https://GitHub.com/jkcoxson/DiOS-instructions](https://GitHub.com/jkcoxson/DiOS-instructions)
 
-2. Move the two idevice files to /usr/local/bin
+2. Move the two idevice files to 
 
-3. Move the dylib to /usr/local/lib
+` /usr/local/bin `
 
-4. In terminal enter chmod +x /usr/local/bin/idev*
+3. Move the dylib to 
+` /usr/local/lib `
+
+4. In terminal enter 
+
+` chmod +x /usr/local/bin/idev* `
 
 5. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
-6. Type in and enter idevice_id 
+6. Type in and enter 
+
+` idevice_id `
 
 7. It should of returned your UDID of you’re device
 
-8. Type without []  idevicedebug -u [UDID] -n --detach run [BundleID]
+8. Type without []  
+
+` idevicedebug -u [UDID] -n --detach run [BundleID] `
 
 
-- **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between -n and --detach.</span>_ Also you can remove -n if you are wanting to activate through usb only. -n is for network.
+- **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between `-n` and `--detach`. </span>_ Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
 
 - **_Recommendation:_** to prevent mess ups on step 8 copy the command and paste it in notepad or a text editor and add udid and packageID and run the command you edited.
 
@@ -112,11 +130,16 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 2. Plug iDevice in linux computer and trust computer
 
-3. Go to location of installation cd  File/Location
+3. Go to location of installation
+` cd  File/Location `
 
-4. Give file permissions sudo chmod +x ./install.sh
+4. Give file permissions 
 
-5. To install just type in sudo ./install.sh
+` sudo chmod +x ./install.sh `
+
+5. To install just type in 
+
+` sudo ./install.sh `
 
 6. Give login password if needed
 
@@ -124,10 +147,12 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 8. If you are wanting to do over wifi then all you need to do is have the device plugged in and type this command. Idevicepair wifi on
 
-9. Type without []  idevicedebug -u [UDID] -n --detach run [PackageID]
+9. Type without []  
+
+` idevicedebug -u [UDID] -n --detach run [PackageID] `
 
 
-- **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between -n and --detach.</span>_ Also you can remove -n if you are wanting to activate through usb only. -n is for network.
+- **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between `-n` and `--detach`.</span>_ Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
 
 - **_Recommendation:_** to prevent mess ups on step 9 copy the command and paste it in notepad or a text editor and add udid and packageID and run the command you edited.
 
