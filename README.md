@@ -41,16 +41,23 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 
 1. Download iTunes from Apple's website (not the Windows Store)
+
 2. Download libimobiledevice from [https://github.com/libimobiledevice-win32/imobiledevice-net/releases/](https://github.com/libimobiledevice-win32/imobiledevice-net/releases/)
+
 3. Plug in your iDevice for now (this will work over WiFi later).
+
 4. Open iTunes, click on your device and make sure you trust this computer on your iDevice. It will ask you for a passcode.
+
 5. Scroll down and check the box for WiFi sync in iTunes.
+
 6. Minimize iTunes and open a power shell. 
 
     Type: "cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer.
 
 7. Run .\idevice_id.exe and copy the numbers and/or letters it gives you this is the UDID.
+
 8. Open AltStore, press My Apps and then view App IDs. Write down the small letters of DolphiniOS, as shown in the prerequisites from above.
+
 9. Then, you will need to download the Developer Disk Image from either of these links. If your dmg isn’t in one try the other. Note, you must download the version that is the same as your major iOS release. For example, a device running 14.4.2 will download 14.4.
 
     Download1: [https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/)
@@ -77,13 +84,21 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 
 1. Download [https://GitHub.com/jkcoxson/DiOS-instructions](https://GitHub.com/jkcoxson/DiOS-instructions)
+
 2. Move the two idevice files to /usr/local/bin
+
 3. Move the dylib to /usr/local/lib
+
 4. In terminal enter chmod +x /usr/local/bin/idev*
+
 5. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
+
 6. Type in and enter idevice_id 
+
 7. It should of returned your UDID of you’re device
+
 8. Type without []  idevicedebug -u [UDID] -n --detach run [BundleID]
+
 
 - **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between -n and --detach.</span>_ Also you can remove -n if you are wanting to activate through usb only. -n is for network.
 
@@ -94,14 +109,23 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 
 1. Download install.sh from github: [https://GitHub.com/jkcoxson/DiOS-instructions](https://GitHub.com/jkcoxson/DiOS-instructions) (still under construction, message jkcoxson any issues you have)
+
 2. Plug iDevice in linux computer and trust computer
+
 3. Go to location of installation cd  File/Location
+
 4. Give file permissions sudo chmod +x ./install.sh
+
 5. To install just type in sudo ./install.sh
+
 6. Give login password if needed
+
 7. At the end of install it should give your udid from usb and wifi if you have wifi setup and copy the udid (If your device was not connected or did not show just type in idevice_id to see udid if connected. If you are having trouble with idevice_id responding type the command: sudo service usbmuxd restart )
+
 8. If you are wanting to do over wifi then all you need to do is have the device plugged in and type this command. Idevicepair wifi on
+
 9. Type without []  idevicedebug -u [UDID] -n --detach run [PackageID]
+
 
 - **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between -n and --detach.</span>_ Also you can remove -n if you are wanting to activate through usb only. -n is for network.
 
@@ -144,9 +168,13 @@ TO BE DETERMINED
 
 
 1. Hecka easy, run sudo apt-get install openssh-server (on systems with apt of course)
+
 2. Choose your method of allowing through iptables. I, jkcoxson, prefer ufw.
+
 3. If you use ufw, run sudo ufw allow 22
+
 4. Put your information and command into the shortcut.
+
 
 ## _<span style="text-decoration:underline;">Premade shortcuts</span>_
 
