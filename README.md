@@ -27,13 +27,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 - First go to **My Apps** and scroll down to **View App IDs**
 
 
-![alt_text](images/image1.jpg "image_tooltip")
+![alt_text](8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
 
 
 - In there you will see a unique bundle under the app's name. Make sure to write it down. Note, it is case sensitive.
 
 
-![alt_text](images/image2.jpg "image_tooltip")
+![alt_text](F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
 
 
 ## _<span style="text-decoration:underline;">Windows</span>_
@@ -219,7 +219,7 @@ This allows debugging apps over ssh with multiple apps and can be useful if you 
 
 
 
-![alt_text](images/image3.jpg "image_tooltip")
+![alt_text](DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
 
 
 By: spidy123222
@@ -232,10 +232,9 @@ This helps with problems with iTunes on windows not connecting over WiFi.
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image4.jpg "image_tooltip")
+![alt_text](EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
@@ -248,7 +247,7 @@ This can help with problems with libimobiledevice not attaching a debug image. (
 
 
 
-![alt_text](images/image5.jpg "image_tooltip")
+![alt_text](C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
