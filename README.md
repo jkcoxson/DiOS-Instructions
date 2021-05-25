@@ -4,6 +4,9 @@ _By Jkcoxson and Spidy123222_
 
 notice: If you want to add anything like a ssh shortcut or something talk to us in Oatmealdome's home discord <https://discord.gg/rdx6Bt8>
 
+Google Docs <https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvekRRYs5NS_ze_U/edit>
+
+
 ## _<span style="text-decoration:underline;">Required Knowledge</span>_
 
 Before starting you will need some terminology and information before starting. For the moment the only Windows install method requires DMG files which hold the debugger needed to activate JIT (just in time).
