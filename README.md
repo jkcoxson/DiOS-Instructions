@@ -4,11 +4,14 @@ _By Jkcoxson and Spidy123222_
 
 notice: If you want to add anything like a ssh shortcut or something talk to us in Oatmealdome's home discord <https://discord.gg/rdx6Bt8>
 
+Google Docs <https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvekRRYs5NS_ze_U/edit>
+
+
 ## _<span style="text-decoration:underline;">Required Knowledge</span>_
 
 Before starting you will need some terminology and information before starting. For the moment the only Windows install method requires DMG files which hold the debugger needed to activate JIT (just in time).
 
-This tutorial works on other apps other than DolphiniOS, like ppsspp and UTM. The tutorial gets revised over time and some might even fix some install issues.
+This tutorial works on other apps other than DolphiniOS, like PPSSPP and UTM. The tutorial gets revised over time and some might even fix some install issues.
 
 Got a lot of results from people trying it out and concluded that you might have to remount the debug image if your device dies or restarts. Which isn't a big deal if you have a shortcut or mount it when you start the debugger.
 
@@ -27,13 +30,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 - First go to **My Apps** and scroll down to **View App IDs**
 
 
-![alt_text](images/image1.jpg "image_tooltip")
+![alt_text](8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
 
 
 - In there you will see a unique bundle under the app's name. Make sure to write it down. Note, it is case sensitive.
 
 
-![alt_text](images/image2.jpg "image_tooltip")
+![alt_text](F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
 
 
 ## _<span style="text-decoration:underline;">Windows</span>_
@@ -50,11 +53,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 5. Scroll down and check the box for WiFi sync in iTunes.
 
-6. Minimize iTunes and open a power shell. 
+6. Minimize iTunes and open a power shell and Type.
 
-    Type: "cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer.
+`"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" `
 
-7. Run .\idevice_id.exe and copy the numbers and/or letters it gives you this is the UDID.
+but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer
+
+7. Run ` .\idevice_id.exe ` and copy the numbers and/or letters it gives you this is the UDID.
 
 8. Open AltStore, press My Apps and then view App IDs. Write down the small letters of DolphiniOS, as shown in the prerequisites from above.
 
@@ -65,17 +70,24 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
     Download2: [https://github.com/pdso/DeveloperDiskImage/tree/master](https://github.com/pdso/DeveloperDiskImage/tree/master)
 
-10. Unzip it and type .\ideviceimagemounter.exe \Users\username\LocationOfFile\iosversionofFile\DeveloperDiskImage.dmg 
+10. Unzip it and type 
 
-	If it fails to mount, restart both your iDevice and PC.
+` .\ideviceimagemounter.exe \Users\username\LocationOfFile\iosversionofFile\DeveloperDiskImage.dmg 
+`
+
+If it fails to mount, restart both your iDevice and PC.
 
 
 
-11. Then you can finally make sure you can run the app by running   .\idevicedebug -u UDID -n --detach run PackageID   where you replace UDID and PackageID with their values you found before.
+11. Then you can finally make sure you can run the app by running  
+
+` .\idevicedebug -u UDID -n --detach run PackageID `
+
+where you replace UDID and PackageID with their values you found before.
 
 	 
 
-- **_Important note:_** On step 11 _<span style="text-decoration:underline;">there is a space in between -n and --detach</span>_. Also you can remove -n if you are wanting to activate through usb only. -n is for network.
+- **_Important note:_** On step 11 _<span style="text-decoration:underline;">there is a space in between `-n` and `--detach`</span>_. Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
 
 - **_Recommendation:_** To prevent mess ups on step 11 copy the command and paste it in notepad or a text editor and add UDID and packageID and run the command you edited.
 
@@ -85,22 +97,31 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 1. Download [https://GitHub.com/jkcoxson/DiOS-instructions](https://GitHub.com/jkcoxson/DiOS-instructions)
 
-2. Move the two idevice files to /usr/local/bin
+2. Move the two idevice files to 
 
-3. Move the dylib to /usr/local/lib
+` /usr/local/bin `
 
-4. In terminal enter chmod +x /usr/local/bin/idev*
+3. Move the dylib to 
+` /usr/local/lib `
+
+4. In terminal enter 
+
+` chmod +x /usr/local/bin/idev* `
 
 5. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
-6. Type in and enter idevice_id 
+6. Type in and enter 
+
+` idevice_id `
 
 7. It should of returned your UDID of you’re device
 
-8. Type without []  idevicedebug -u [UDID] -n --detach run [BundleID]
+8. Type without []  
+
+` idevicedebug -u [UDID] -n --detach run [BundleID] `
 
 
-- **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between -n and --detach.</span>_ Also you can remove -n if you are wanting to activate through usb only. -n is for network.
+- **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between `-n` and `--detach`. </span>_ Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
 
 - **_Recommendation:_** to prevent mess ups on step 8 copy the command and paste it in notepad or a text editor and add udid and packageID and run the command you edited.
 
@@ -112,11 +133,16 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 2. Plug iDevice in linux computer and trust computer
 
-3. Go to location of installation cd  File/Location
+3. Go to location of installation
+` cd  File/Location `
 
-4. Give file permissions sudo chmod +x ./install.sh
+4. Give file permissions 
 
-5. To install just type in sudo ./install.sh
+` sudo chmod +x ./install.sh `
+
+5. To install just type in 
+
+` sudo ./install.sh `
 
 6. Give login password if needed
 
@@ -124,10 +150,12 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 8. If you are wanting to do over wifi then all you need to do is have the device plugged in and type this command. Idevicepair wifi on
 
-9. Type without []  idevicedebug -u [UDID] -n --detach run [PackageID]
+9. Type without []  
+
+` idevicedebug -u [UDID] -n --detach run [PackageID] `
 
 
-- **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between -n and --detach.</span>_ Also you can remove -n if you are wanting to activate through usb only. -n is for network.
+- **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between `-n` and `--detach`.</span>_ Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
 
 - **_Recommendation:_** to prevent mess ups on step 9 copy the command and paste it in notepad or a text editor and add udid and packageID and run the command you edited.
 
@@ -194,7 +222,7 @@ This allows debugging apps over ssh with multiple apps and can be useful if you 
 
 
 
-![alt_text](images/image3.jpg "image_tooltip")
+![alt_text](DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
 
 
 By: spidy123222
@@ -207,10 +235,9 @@ This helps with problems with iTunes on windows not connecting over WiFi.
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image4.jpg "image_tooltip")
+![alt_text](EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
@@ -223,7 +250,7 @@ This can help with problems with libimobiledevice not attaching a debug image. (
 
 
 
-![alt_text](images/image5.jpg "image_tooltip")
+![alt_text](C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
