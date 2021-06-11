@@ -38,8 +38,10 @@ apt-get install python-dev --fix-missing -y
 
 
 apt-get install cython -y
-pip install cython --install-options="--no-cython-compile"
 dpkg --configure -a
+python setup.py install
+pip install cython --install-options="--no-cython-compile"
+
 
 
 apt-get autoheader -y
