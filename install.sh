@@ -38,7 +38,8 @@ apt-get install python-dev --fix-missing -y
 
 
 apt-get install cython -y
-apt-get install cython --install-option="--no-cython-compile" -y
+pip install cython --install-options="--no-cython-compile"
+dpkg --configure -a
 
 
 apt-get autoheader -y
@@ -54,7 +55,7 @@ apt-get install libtool-bin -y
 
 
 apt-get install libplist++-dev -y
-apt-get install libplist++-dev -y
+apt-get install libplist++ -y
 
 
 mkdir openssl
