@@ -179,6 +179,22 @@ To find your root username it would be in your main partition for windows so C:/
 
 1. Go to settings, apps, apps and features, manage optional features. Then search for OpenSSH server and install it.
 
+You can set up the server to start automatically and start, open PowerShell in adninistrator type:
+
+` Set-Service sshd -StartupType Automatic
+and
+Start-Service sshd  `
+
+Open and ensure the firewall accept SSH connexion, by default port 22, type:
+
+` New-NetFirewallRule -Name sshd -DisplayName 'Allow SSH' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22 `
+
+To check if the port is listening :
+
+` netstat -a  | findstr 22 `
+
+**_SSH PASSWORD AUTH_**
+
 2. Then, in settings go to the Internet and then look for your IP address. Write that down.
 
 3. On your iDevice, open shortcuts and make a new one. Choose SSH.
@@ -186,6 +202,45 @@ To find your root username it would be in your main partition for windows so C:/
 4. Put in your IP address, username and password to your computer. Make sure to give the exact location of libimobiledevice, so that includes all the way down to drive letter C:\example\fileloaction\libimobiledevice\idevicedebug. For the command put
 
  C:Users\username\LocationOfFile\libimobiledevice.1.2.1-r1122-win-x64\idevicedebug -u [UDID] -n --detach run [PackageID]
+
+
+**_SSH KEY AUTH_** 
+
+2. generating Authorized keys file, navigate to Users.ssh in powershell:
+
+` cd ~/.ssh `
+
+then generate a random key, name it authorized_key and leave blank passphrase(by pressing enter):
+
+` ssh-keygen  `
+
+ Generating public/private rsa key pair.
+
+Enter file in which to save the key (/home/demo/.ssh/id_rsa):` authorized_keys `
+
+Enter passphrase (empty for no passphrase):  ` `
+
+Enter same passphrase again:  ` `
+
+then it will indicate path location of authorized key
+
+3. Add the key of idevice to your Server:
+
+On your idevice :shortcut > ssh key > press on your key ed25519 or RSA between ur choice > share public key > copy
+
+On Windows : go explorer folder to = C:\Users\Username.ssh
+
+it should have two files: authorized_keys.pub and authorized_keys
+ - authorized_keys.pub erase it (we dont care about this one)
+ - authorized_keys Right click go properties>security>group or user names = CHECK if your username is inside this group and got right: Full Control if not add it.
+
+Right click again authorized_keys and Edit with notepad, you can erase everything in the file and copy the Pub Key that u got from idevice. Please Save the file using "SAVE AS" and select "all files" not txt .
+
+You can restart computer or the OpenSSh Server in Services.
+
+4. Same process as point 4 upper in SSH PASSWORD AUTH: fill information in the shortcut Username and IPadress.
+
+
 
 ### _<span style="text-decoration:underline;">MacOS</span>_
 
