@@ -179,13 +179,13 @@ To find your root username it would be in your main partition for windows so C:/
 
 1. Go to settings, apps, apps and features, manage optional features. Then search for OpenSSH server and install it.
 
-You can set up the server to start automatically and start, open PowerShell in adninistrator type:
+You can set up the server to start automatically, open PowerShell in adninistrator type:
 
 ` Set-Service sshd -StartupType Automatic
 and
 Start-Service sshd  `
 
-Open and ensure the firewall accept SSH connexion, by default port 22, type:
+Open and ensure the firewall accept SSH connection, by default port 22, type:
 
 ` New-NetFirewallRule -Name sshd -DisplayName 'Allow SSH' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22 `
 
@@ -228,13 +228,13 @@ then it will indicate path location of authorized key
 
 On your idevice :shortcut > ssh key > press on your key ed25519 or RSA between ur choice > share public key > copy
 
-On Windows : go explorer folder to = C:\Users\Username.ssh
+On Windows : go explorer folder to = C:\Users\Username\.ssh
 
 it should have two files: authorized_keys.pub and authorized_keys
  - authorized_keys.pub erase it (we dont care about this one)
  - authorized_keys Right click go properties>security>group or user names = CHECK if your username is inside this group and got right: Full Control if not add it.
 
-Right click again authorized_keys and Edit with notepad, you can erase everything in the file and copy the Pub Key that u got from idevice. Please Save the file using "SAVE AS" and select "all files" not txt .
+Right click again authorized_keys and edit with notepad, you can erase everything in the file and copy the Pub Key that you got from idevice and save.
 
 You can restart computer or the OpenSSh Server in Services.
 
