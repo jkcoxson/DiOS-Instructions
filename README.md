@@ -209,6 +209,7 @@ To check if the port is listening :
 2. generating Authorized keys file, Create folder .ssh and navigate to it in powershell:
 
 ` md ~/.ssh `
+
 ` cd ~/.ssh `
 
 then generate a random key, name it authorized_key and leave blank passphrase(by pressing enter):
@@ -242,8 +243,9 @@ Right click again authorized_keys and edit with notepad, you can erase everythin
 On Windows : go explorer folder to = C:\ProgramData\ssh 
 
 Edit in notepad sshd_config file: uncomment removing # line 34 and line 85 comment with #
- 34 PubkeyAuthentication yes
- 85 #       AuthorizedKeysFile PROGRAMDATA/ssh/administrators_authorized_keys
+
+- 34 PubkeyAuthentication yes
+- 85 #       AuthorizedKeysFile PROGRAMDATA/ssh/administrators_authorized_keys
 
 Save and restart Openssh server, in powershell :
 
