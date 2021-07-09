@@ -173,7 +173,7 @@ You will also need your password and root username so the name your computer use
 
 To find your root username it would be in your main partition for windows so C:/Users/RootUsername
 
-**_Note_**: for some reason if your username and password don’t work you will need to create a SSH key and currently this tutorial doesn’t tell how yet.
+**_Note_**: for some reason if your username and password don’t work you will need to create a SSH key.
 
 ### _<span style="text-decoration:underline;">Windows</span>_
 
@@ -181,9 +181,9 @@ To find your root username it would be in your main partition for windows so C:/
 
 You can set up the server to start automatically, open PowerShell in adninistrator type:
 
-` Set-Service sshd -StartupType Automatic
-and
-Start-Service sshd  `
+` Set-Service sshd -StartupType Automatic  `
+
+ ` Start-Service sshd `
 
 Open and ensure the firewall accept SSH connection, by default port 22, type:
 
