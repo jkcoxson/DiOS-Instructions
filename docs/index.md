@@ -1,4 +1,4 @@
-# *_<span style="text-decoration:underline;">Instructions to run Jit for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered or semi-tethered. </span>_*
+# * <span style="text-decoration:underline;">These are Instructions to run Jit for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered or semi-tethered. </span> *
 
 _Tutorial created by Jkcoxson and Spidy123222_
 
