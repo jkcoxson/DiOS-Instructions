@@ -55,7 +55,7 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 6. Minimize iTunes and open a power shell and Type.
 
-`"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" `
+``"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" ``
 
 but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer
 
