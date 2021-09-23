@@ -1,6 +1,6 @@
-# **_<span style="text-decoration:underline;">Instructions for how to run DolphiniOS from Windows,Mac OS,Linux (Debian) tethered. </span>_**
+# *_<span style="text-decoration:underline;">Instructions to run Jit for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered or semi-tethered. </span>_*
 
-_By Jkcoxson and Spidy123222_
+_Tutorial created by Jkcoxson and Spidy123222_
 
 notice: If you want to add anything like a ssh shortcut or something talk to us in Oatmealdome's home discord <https://discord.gg/rdx6Bt8>
 
