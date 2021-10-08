@@ -1,6 +1,6 @@
-# **_<span style="text-decoration:underline;">Instructions for how to run DolphiniOS from Windows,Mac OS,Linux (Debian) tethered. </span>_**
+# <span style="text-decoration:underline;">Instructions to run Jit for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered, semi-tethered. </span>
 
-_By Jkcoxson and Spidy123222_
+_Tutorial created by Jkcoxson and Spidy123222_
 
 notice: If you want to add anything like a ssh shortcut or something talk to us in Oatmealdome's home discord <https://discord.gg/rdx6Bt8>
 
@@ -11,11 +11,11 @@ Google Docs <https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvek
 
 Before starting you will need some terminology and information before starting. For the moment the only Windows install method requires DMG files which hold the debugger needed to activate JIT (just in time).
 
-This tutorial works on other apps other than DolphiniOS, like PPSSPP and UTM. The tutorial gets revised over time and some might even fix some install issues.
+This tutorial is using DolphiniOS as a reference but it also works on other apps other than DolphiniOS, like PPSSPP and UTM. The tutorial gets revised over time and some might even fix some install issues.
 
 Got a lot of results from people trying it out and concluded that you might have to remount the debug image if your device dies or restarts. Which isn't a big deal if you have a shortcut or mount it when you start the debugger.
 
-Please make it easier for yourself and have a notepad or a text editor to put the commands in first that you will need to edit and reuse.
+**Please make it easier for yourself and have a notepad or a text editor to put the commands in first that you will need to edit and reuse.**
 
 ### <span style="text-decoration:underline;">Terminology</span>
 
@@ -30,13 +30,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 - First go to **My Apps** and scroll down to **View App IDs**
 
 
-![alt_text](8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
 
 
 - In there you will see a unique bundle under the app's name. Make sure to write it down. Note, it is case sensitive.
 
 
-![alt_text](F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
 
 
 ## _<span style="text-decoration:underline;">Windows</span>_
@@ -55,11 +55,11 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 6. Minimize iTunes and open a power shell and Type.
 
-`"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" `
+``"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" ``
 
 but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer
 
-7. Run ` .\idevice_id.exe ` and copy the numbers and/or letters it gives you this is the UDID.
+7. Run `` .\idevice_id.exe `` and copy the numbers and/or letters it gives you this is the UDID.
 
 8. Open AltStore, press My Apps and then view App IDs. Write down the small letters of DolphiniOS, as shown in the prerequisites from above.
 
@@ -72,8 +72,7 @@ but fill in the correct information pertaining to where you saved and unzipped L
 
 10. Unzip it and type 
 
-` .\ideviceimagemounter.exe \Users\username\LocationOfFile\iosversionofFile\DeveloperDiskImage.dmg 
-`
+`` .\ideviceimagemounter.exe \Users\username\LocationOfFile\iosversionofFile\DeveloperDiskImage.dmg ``
 
 If it fails to mount, restart both your iDevice and PC.
 
@@ -81,13 +80,13 @@ If it fails to mount, restart both your iDevice and PC.
 
 11. Then you can finally make sure you can run the app by running  
 
-` .\idevicedebug -u UDID -n --detach run PackageID `
+`` .\idevicedebug -u UDID -n --detach run PackageID ``
 
 where you replace UDID and PackageID with their values you found before.
 
 	 
 
-- **_Important note:_** On step 11 _<span style="text-decoration:underline;">there is a space in between `-n` and `--detach`</span>_. Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
+- **_Important note:_** On step 11 _<span style="text-decoration:underline;">there is a space in between ``-n`` and ``--detach`` </span>_. Also you can remove ``-n`` if you are wanting to activate through usb only. ``-n`` is for network.
 
 - **_Recommendation:_** To prevent mess ups on step 11 copy the command and paste it in notepad or a text editor and add UDID and packageID and run the command you edited.
 
@@ -99,29 +98,29 @@ where you replace UDID and PackageID with their values you found before.
 
 2. Move the two idevice files to 
 
-` /usr/local/bin `
+`` /usr/local/bin ``
 
 3. Move the dylib to 
-` /usr/local/lib `
+`` /usr/local/lib ``
 
 4. In terminal enter 
 
-` chmod +x /usr/local/bin/idev* `
+`` chmod +x /usr/local/bin/idev* ``
 
 5. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
 6. Type in and enter 
 
-` idevice_id `
+`` idevice_id ``
 
 7. It should of returned your UDID of you’re device
 
 8. Type without []  
 
-` idevicedebug -u [UDID] -n --detach run [BundleID] `
+`` idevicedebug -u [UDID] -n --detach run [BundleID] ``
 
 
-- **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between `-n` and `--detach`. </span>_ Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
+- **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between ``-n`` and ``--detach``. </span>_ Also you can remove ``-n`` if you are wanting to activate through usb only. ``-n`` is for network.
 
 - **_Recommendation:_** to prevent mess ups on step 8 copy the command and paste it in notepad or a text editor and add udid and packageID and run the command you edited.
 
@@ -134,15 +133,15 @@ where you replace UDID and PackageID with their values you found before.
 2. Plug iDevice in linux computer and trust computer
 
 3. Go to location of installation
-` cd  File/Location `
+`` cd  File/Location ``
 
 4. Give file permissions 
 
-` sudo chmod +x ./install.sh `
+`` sudo chmod +x ./install.sh ``
 
 5. To install just type in 
 
-` sudo ./install.sh `
+`` sudo ./install.sh ``
 
 6. Give login password if needed
 
@@ -152,10 +151,10 @@ where you replace UDID and PackageID with their values you found before.
 
 9. Type without []  
 
-` idevicedebug -u [UDID] -n --detach run [PackageID] `
+`` idevicedebug -u [UDID] -n --detach run [PackageID] ``
 
 
-- **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between `-n` and `--detach`.</span>_ Also you can remove `-n` if you are wanting to activate through usb only. `-n` is for network.
+- **_Important note:_** on step 9 _<span style="text-decoration:underline;">There is a space in between ``-n`` and ``--detach``.</span>_ Also you can remove ``-n`` if you are wanting to activate through usb only. ``-n`` is for network.
 
 - **_Recommendation:_** to prevent mess ups on step 9 copy the command and paste it in notepad or a text editor and add udid and packageID and run the command you edited.
 
@@ -181,17 +180,19 @@ To find your root username it would be in your main partition for windows so C:/
 
 You can set up the server to start automatically, open PowerShell in adninistrator type:
 
-` Set-Service sshd -StartupType Automatic  `
+`` Set-Service sshd -StartupType Automatic  ``
 
- ` Start-Service sshd `
+Then do this next one after from one above
+
+ `` Start-Service sshd ``
 
 Open and ensure the firewall accept SSH connection, by default port 22, type:
 
-` New-NetFirewallRule -Name sshd -DisplayName 'Allow SSH' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22 `
+`` New-NetFirewallRule -Name sshd -DisplayName 'Allow SSH' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22 ``
 
 To check if the port is listening :
 
-` netstat -a  | findstr 22 `
+`` netstat -a  | findstr 22 ``
 
 **_SSH PASSWORD AUTH_**
 
@@ -208,21 +209,21 @@ To check if the port is listening :
 
 2. generating Authorized keys file, Create folder .ssh and navigate to it in powershell:
 
-` md ~/.ssh `
+`` md ~/.ssh ``
 
-` cd ~/.ssh `
+`` cd ~/.ssh ``
 
 then generate a random key, name it authorized_key and leave blank passphrase(by pressing enter):
 
-` ssh-keygen  `
+`` ssh-keygen  ``
 
  Generating public/private rsa key pair.
 
-Enter file in which to save the key (/home/demo/.ssh/id_rsa):` authorized_keys `
+Enter file in which to save the key (/home/demo/.ssh/id_rsa):`` authorized_keys ``
 
-Enter passphrase (empty for no passphrase):  ` `
+Enter passphrase (empty for no passphrase):  `` ``
 
-Enter same passphrase again:  ` `
+Enter same passphrase again:  `` ``
 
 then it will indicate path location of authorized key
 
@@ -249,7 +250,7 @@ Edit in notepad sshd_config file: uncomment removing # line 34 and line 85 comme
 
 Save and restart Openssh server, in powershell :
 
-` Restart-Service sshd `
+`` Restart-Service sshd ``
 
 5. Finish the Shortcut from your idevice filling Host and User info, and write the script following the upper point 4 for SSH PASSWORD AUTH.
 
@@ -263,11 +264,11 @@ TO BE DETERMINED
 
 
 
-1. Hecka easy, run sudo apt-get install openssh-server (on systems with apt of course)
+1. Hecka easy, run sudo ``apt-get install`` openssh-server (on systems with apt of course)
 
 2. Choose your method of allowing through iptables. I, jkcoxson, prefer ufw.
 
-3. If you use ufw, run sudo ufw allow 22
+3. If you use ufw, run ``sudo ufw allow 22``
 
 4. Put your information and command into the shortcut.
 
@@ -290,7 +291,7 @@ This allows debugging apps over ssh with multiple apps and can be useful if you 
 
 
 
-![alt_text](DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
 
 
 By: spidy123222
@@ -305,7 +306,7 @@ This helps with problems with iTunes on windows not connecting over WiFi.
 
 
 
-![alt_text](EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
@@ -318,7 +319,7 @@ This can help with problems with libimobiledevice not attaching a debug image. (
 
 
 
-![alt_text](C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
