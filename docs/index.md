@@ -291,7 +291,7 @@ This allows debugging apps over ssh with multiple apps and can be useful if you 
 
 
 
-![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
 
 
 By: spidy123222
@@ -306,7 +306,7 @@ This helps with problems with iTunes on windows not connecting over WiFi.
 
 
 
-![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
@@ -319,7 +319,7 @@ This can help with problems with libimobiledevice not attaching a debug image. (
 
 
 
-![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
+![alt_text](https://nbviewer.org/github/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
