@@ -1,7 +1,7 @@
 # <span style="text-decoration:underline;">Instructions to run Jit for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered, semi-tethered. </span>
 
 _Tutorial created by Jkcoxson and Spidy123222_
-THISISATEST
+
 notice: If you want to add anything like a ssh shortcut or something talk to us in Oatmealdome's home discord <https://discord.gg/rdx6Bt8>
 
 Google Docs <https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvekRRYs5NS_ze_U/edit>
