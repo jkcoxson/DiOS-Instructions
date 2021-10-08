@@ -30,13 +30,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 - First go to **My Apps** and scroll down to **View App IDs**
 
 
-![alt_text](8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
 
 
 - In there you will see a unique bundle under the app's name. Make sure to write it down. Note, it is case sensitive.
 
 
-![alt_text](F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
 
 
 ## _<span style="text-decoration:underline;">Windows</span>_
@@ -291,7 +291,7 @@ This allows debugging apps over ssh with multiple apps and can be useful if you 
 
 
 
-![alt_text](DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/DD9E699A-904E-40E2-AF0B-752746905E44.jpeg "image_tooltip")
 
 
 By: spidy123222
@@ -306,7 +306,7 @@ This helps with problems with iTunes on windows not connecting over WiFi.
 
 
 
-![alt_text](EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/EFA62D2C-EB0F-485A-912D-198733B1F5BD.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
@@ -319,13 +319,9 @@ This can help with problems with libimobiledevice not attaching a debug image. (
 
 
 
-![alt_text](C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/C6C8ED7D-221B-4938-B612-5720A3EB7085.jpeg "image_tooltip")
 
 
 By: Magnus_Redd
 
 Download: [https://www.icloud.com/shortcuts/7611e9873b2b43fea11c1b459949b339](https://www.icloud.com/shortcuts/7611e9873b2b43fea11c1b459949b339)
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
