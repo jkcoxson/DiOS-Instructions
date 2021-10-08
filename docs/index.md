@@ -30,13 +30,13 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 - First go to **My Apps** and scroll down to **View App IDs**
 
 
-![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/8D54E08D-64A5-4C8C-AC0F-2CF5DC3A2617.jpeg/jpeg "image_tooltip")
 
 
 - In there you will see a unique bundle under the app's name. Make sure to write it down. Note, it is case sensitive.
 
 
-![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg "image_tooltip")
+![alt_text](https://github.com/jkcoxson/DiOS-Instructions/blob/a3f70fd88b47c7fbe869022e009cc659f10c5048/F56A181D-4B6F-4DD0-A343-1FF95FFD774F.jpeg/jpeg "image_tooltip")
 
 
 ## _<span style="text-decoration:underline;">Windows</span>_
