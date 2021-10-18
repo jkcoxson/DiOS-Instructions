@@ -1,2 +1,2 @@
-
+powershell -command "Start-Process Powershell -Verb RunAs \"-command "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned \"
 powershell -command "   Start-Process PowerShell -Verb RunAs \""-Command `\""cd '%cd%'; & '%~dp0\PS1scripts\RestartSSH.ps1';`\""\""   "
