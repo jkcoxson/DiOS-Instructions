@@ -1,19 +1,19 @@
-# <span style="text-decoration:underline;">Instructions to run Jit for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered, semi-tethered. </span>
+# <span style="text-decoration:underline;">Instructions to run JIT for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered, semi-tethered. </span>
 
-_Tutorial created by Jkcoxson and Spidy123222_
+_Tutorial created by jkcoxson and Spidy123222_
 
-notice: If you want to add anything like a ssh shortcut or something talk to us in Oatmealdome's home discord <https://discord.gg/rdx6Bt8>
+Notice: If you want to add anything like an SSH shortcut or something talk to us in [*Oatmealdome's Home* Discord server](https://discord.gg/rdx6Bt8)
 
-Google Docs <https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvekRRYs5NS_ze_U/edit>
+[Google Docs guide](https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvekRRYs5NS_ze_U/edit)
 
 
 ## _<span style="text-decoration:underline;">Required Knowledge</span>_
 
-Before starting you will need some terminology and information before starting. For the moment the only Windows install method requires DMG files which hold the debugger needed to activate JIT (just in time).
+Before starting you will need some terminology and information. For the moment only the Windows install method requires DMG files which holds the debugger needed to activate JIT (just in time).
 
-This tutorial is using DolphiniOS as a reference but it also works on other apps other than DolphiniOS, like PPSSPP and UTM. The tutorial gets revised over time and some might even fix some install issues.
+This tutorial is using DolphiniOS as a reference but it also works on other apps other than DolphiniOS, like PPSSPP and UTM. The tutorial gets revised over time and might even fix some install issues.
 
-Got a lot of results from people trying it out and concluded that you might have to remount the debug image if your device dies or restarts. Which isn't a big deal if you have a shortcut or mount it when you start the debugger.
+We have gotten a lot of results from people trying it out and concluded that you might have to remount the debug image if your device dies or restarts, which isn't a big deal if you have a shortcut or mount it when you start the debugger.
 
 **Please make it easier for yourself and have a notepad or a text editor to put the commands in first that you will need to edit and reuse.**
 
@@ -25,7 +25,7 @@ Got a lot of results from people trying it out and concluded that you might have
 
 ### <span style="text-decoration:underline;">Finding BundleID via Altstore</span>
 
-This requires having Altstore installed (Windows and Mac only) but once it’s installed make sure to install the app you want first.
+This requires having AltStore installed (Windows and Mac only) but once it’s installed make sure to install the app you want first.
 
 - First go to **My Apps** and scroll down to **View App IDs**
 
@@ -47,28 +47,28 @@ This requires having Altstore installed (Windows and Mac only) but once it’s i
 
 2. Download libimobiledevice from [https://github.com/libimobiledevice-win32/imobiledevice-net/releases/](https://github.com/libimobiledevice-win32/imobiledevice-net/releases/)
 
-3. Plug in your iDevice for now (this will work over WiFi later).
+3. Plug in your iDevice (this will work over WiFi later).
 
 4. Open iTunes, click on your device and make sure you trust this computer on your iDevice. It will ask you for a passcode.
 
 5. Scroll down and check the box for WiFi sync in iTunes.
 
-6. Minimize iTunes and open a power shell and Type.
+6. Minimize iTunes and open a power shell and type
 
 ``"cd \Users\yourusername\**_LocationOfFile_**\libimobiledevice.1.2.1-r1122-win-x64" ``
 
 but fill in the correct information pertaining to where you saved and unzipped Libimobiledevice on your computer
 
-7. Run `` .\idevice_id.exe `` and copy the numbers and/or letters it gives you this is the UDID.
+7. Run `` .\idevice_id.exe `` and copy the numbers and/or letters it gives you. This is your UDID.
 
-8. Open AltStore, press My Apps and then view App IDs. Write down the small letters of DolphiniOS, as shown in the prerequisites from above.
+8. Open AltStore, press `My Apps` and then `View App IDs`. Write down the small letters of DolphiniOS, as shown in the prerequisites from above.
 
-9. Then, you will need to download the Developer Disk Image from either of these links. If your dmg isn’t in one try the other. Note, you must download the version that is the same as your major iOS release. For example, a device running 14.4.2 will download 14.4.
+9. Download the Developer Disk Image from either of these links. Note; you must download the version that is the same as your major iOS release. For example, a device running 14.4.2 will download 14.4.
 
-    Download1: [https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/)
+    [Download 1](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/)
 
 
-    Download2: [https://github.com/pdso/DeveloperDiskImage/tree/master](https://github.com/pdso/DeveloperDiskImage/tree/master)
+    [Download 2](https://github.com/pdso/DeveloperDiskImage/tree/master)
 
 10. Unzip it and type 
 
@@ -78,7 +78,7 @@ If it fails to mount, restart both your iDevice and PC.
 
 
 
-11. Then you can finally make sure you can run the app by running  
+11. Make sure you can run the app by running  
 
 `` .\idevicedebug -u UDID -n --detach run PackageID ``
 
