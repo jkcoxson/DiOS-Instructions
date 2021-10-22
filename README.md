@@ -1,6 +1,6 @@
 # <span style="text-decoration:underline;">Instructions to run JIT for iOS/iPadOS from Windows,Mac OS,Linux(Debian) tethered, semi-tethered. </span>
 
-_Tutorial created by jkcoxson and Spidy123222_
+_Tutorial created by [jkcoxson](https://github.com/jkcoxson) and [spidy123222](https://github.com/Spidy123222)_
 
 Notice: If you want to add anything like an SSH shortcut or something talk to us in [*Oatmealdome's Home* Discord server](https://discord.gg/rdx6Bt8)
 
@@ -65,7 +65,7 @@ but fill in the correct information pertaining to where you saved and unzipped L
 
 9. Download the Developer Disk Image from either of these links. Note; you must download the version that is the same as your major iOS release. For example, a device running 14.4.2 will download 14.4.
 
-    [Download 1](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/)
+    [Download 1](https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases/)
 
 
     [Download 2](https://github.com/pdso/DeveloperDiskImage/tree/master)
