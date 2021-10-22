@@ -4,7 +4,7 @@ _Tutorial created by jkcoxson and Spidy123222_
 
 Notice: If you want to add anything like an SSH shortcut or something talk to us in [*Oatmealdome's Home* Discord server](https://discord.gg/rdx6Bt8)
 
-[Google Docs guide](https://docs.google.com/document/d/11_jju27qzhH_epq9XS1SlIlaBDPfvekRRYs5NS_ze_U/edit)
+[Link for current guide](https://jkcoxson.github.io/DiOS-Instructions/)
 
 
 ## _<span style="text-decoration:underline;">Required Knowledge</span>_
