@@ -117,7 +117,7 @@ Then executing by entering
 
 6. Type without []  
 
-`` idevicedebug -u [UDID] -n --detach run [BundleID] ``
+`` ./idevicedebug -u [UDID] -n --detach run [BundleID] ``
 
 
 - **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between ``-n`` and ``--detach``. </span>_ Also you can remove ``-n`` if you are wanting to activate through usb only. ``-n`` is for network.
