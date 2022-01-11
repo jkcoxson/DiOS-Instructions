@@ -94,13 +94,18 @@ where you replace UDID and PackageID with their values you found before.
 
 
 
-1. **Make sure you have a github account logged in beforehand** and Download the latest one that says *master* on the right and make sure it is MacOS and Extract it in Downloads folder. 
+1. **Make sure you have a github account logged in beforehand** and Download the latest one that says *master* on the right and make sure it is MacOS and Extract it in Downloads folder.
 
 	[Download](https://github.com/libimobiledevice/libimobiledevice/actions)
+	
+2. Enter the extracted zip file and extract file `` libimobiledevice.tar ``
 
-2. In terminal enter 
+2. In the terminal
+move to directory by entering 
+`` cd ~/Downloads/libimobiledevice-latest_macOS/usr/local/bin/ ``
 
-`` chmod +x ~/Downloads/libimobiledevice-latest_macOS/libimobiledevice.tar ``
+Then executing by entering 
+`` chmod +x /idev* ``
 
 3. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
