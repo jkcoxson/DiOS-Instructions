@@ -94,28 +94,23 @@ where you replace UDID and PackageID with their values you found before.
 
 
 
-1. Download [https://GitHub.com/jkcoxson/DiOS-instructions](https://GitHub.com/jkcoxson/DiOS-instructions)
+1. **Make sure you have a github account logged in beforehand** and Download the latest one that says *master* on the right and make sure it is MacOS and Extract it in Downloads folder. 
 
-2. Move the two idevice files to 
+	[Download](https://github.com/libimobiledevice/libimobiledevice/actions)
 
-`` /usr/local/bin ``
+2. In terminal enter 
 
-3. Move the dylib to 
-`` /usr/local/lib ``
+`` chmod +x ~/Downloads/libimobiledevice-latest_macOS/libimobiledevice.tar ``
 
-4. In terminal enter 
+3. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
-`` chmod +x /usr/local/bin/idev* ``
-
-5. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
-
-6. Type in and enter 
+4. Type in and enter 
 
 `` idevice_id ``
 
-7. It should of returned your UDID of you’re device
+5. It should of returned your UDID of you’re device
 
-8. Type without []  
+6. Type without []  
 
 `` idevicedebug -u [UDID] -n --detach run [BundleID] ``
 
