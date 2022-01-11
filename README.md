@@ -111,7 +111,7 @@ Then executing by entering
 
 4. Type in and enter 
 
-`` idevice_id ``
+`` ./idevice_id ``
 
 5. It should of returned your UDID of you’re device
 
