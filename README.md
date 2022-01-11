@@ -94,30 +94,30 @@ where you replace UDID and PackageID with their values you found before.
 
 
 
-1. Download [https://GitHub.com/jkcoxson/DiOS-instructions](https://GitHub.com/jkcoxson/DiOS-instructions)
+1. **Make sure you have a github account logged in beforehand** and Download the latest one that says *master* on the right and make sure it is MacOS and Extract it in Downloads folder.
 
-2. Move the two idevice files to 
+	[Download](https://github.com/libimobiledevice/libimobiledevice/actions)
+	
+2. Enter the extracted zip file and extract file `` libimobiledevice.tar ``
 
-`` /usr/local/bin ``
+2. In the terminal
+move to directory by entering 
+`` cd ~/Downloads/libimobiledevice-latest_macOS/usr/local/bin/ ``
 
-3. Move the dylib to 
-`` /usr/local/lib ``
+Then executing by entering 
+`` chmod +x ./idev* ``
 
-4. In terminal enter 
+3. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
-`` chmod +x /usr/local/bin/idev* ``
+4. Type in and enter 
 
-5. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
+`` ./idevice_id ``
 
-6. Type in and enter 
+5. It should of returned your UDID of you’re device
 
-`` idevice_id ``
+6. Type without []  
 
-7. It should of returned your UDID of you’re device
-
-8. Type without []  
-
-`` idevicedebug -u [UDID] -n --detach run [BundleID] ``
+`` ./idevicedebug -u [UDID] -n --detach run [BundleID] ``
 
 
 - **_Important note:_** on step 8 _<span style="text-decoration:underline;">There is a space in between ``-n`` and ``--detach``. </span>_ Also you can remove ``-n`` if you are wanting to activate through usb only. ``-n`` is for network.
