@@ -105,7 +105,7 @@ move to directory by entering
 `` cd ~/Downloads/libimobiledevice-latest_macOS/usr/local/bin/ ``
 
 Then executing by entering 
-`` chmod +x /idev* ``
+`` chmod +x ./idev* ``
 
 3. Make sure your device is plugged in and that it is Trusted. Then go in Finder and click your device and Enable WiFi sync.
 
