@@ -2,6 +2,8 @@
 
 _Tutorial created by [jkcoxson](https://github.com/jkcoxson) and [spidy123222](https://github.com/Spidy123222)_
 
+NOTE: This method has been superceeded by [JitStreamer](http://jitstreamer.jkcoxson.com) for ease of use. 
+
 Notice: If you want to add anything like an SSH shortcut or something talk to us in [*Oatmealdome's Home* Discord server](https://discord.gg/rdx6Bt8)
 
 [Link for current guide](https://jkcoxson.github.io/DiOS-Instructions/)
